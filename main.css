@@ -1,0 +1,78 @@
+.body, html{
+    background:lightgreen ; height: 100%;margin: 0 auto;
+}
+
+.page-header {
+    height: 165px;
+    position: fixed;
+    text-align: left;
+    left: 50px;
+    top: 10%;
+    background: lightsalmon;
+}
+
+.page-brand {
+    position: relative;
+    bottom: 20px;
+}
+
+.page-navigation{
+    position: relative;
+    right:40px;
+    bottom: 40px;
+}
+
+.page-footer {
+    position: fixed;
+    left: 50px;
+    bottom: 10%;
+    background: lightblue;
+}
+
+.social-media-links{
+    position: relative;
+    right: 40px;
+    bottom: 20px;
+    height: 40px;
+    width: 25px;
+}
+
+.page-content{
+    right: 0;
+    background: pink;
+}
+
+
+
+.content-section{
+    padding: 0;
+    margin-left: 400px;
+    min-height: 100vh;
+    width: 1000px;
+    background: plum;
+    text-align: right;
+}
+
+.page-navigation__item{
+    list-style-type: none;
+}
+
+.band-members{
+    right:0;
+}
+
+.band-members__item{
+    list-style-type: none;
+}
+
+.gallery__item{
+    list-style-type: none;
+}
+
+.social-media-links__item{
+    list-style-type: none;
+}
+
+.screen-reader-only{
+    display: none;
+}
