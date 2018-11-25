@@ -1,78 +1,217 @@
-.body, html{
-    background:lightgreen ; height: 100%;margin: 0 auto;
+* {
+    box-sizing: border-box;
 }
 
-.page-header {
-    height: 165px;
-    position: fixed;
-    text-align: left;
-    left: 50px;
-    top: 10%;
-    background: lightsalmon;
+html{
+    background-image: url("background.svg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.page-brand {
-    position: relative;
-    bottom: 20px;
+body{
+    height: 100%;padding: 0;margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: rgb(204,200,255,0.8);
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 4.5px;
+    color: #ef008e;
+}
+
+h3{
+    color: #ccc8ff;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 350;
+    letter-spacing: 1.6px;
+    border: rgb(204,200,255,0.1);
+    border-radius: 5px;
+    background-color:  rgb(204,200,255,0.1);
+    color: rgb(204,200,255,0.8);
+    width: 125px;
+    height: 30px; 
+}
+
+.form__input{
+    background-color:  rgb(204,200,255,0.1);
+    color: rgb(204,200,255,0.8);
+    border: rgb(204,200,255,0.8);
+    border-radius: 5px;
+    height:30px;
 }
 
 .page-navigation{
-    position: relative;
-    right:40px;
-    bottom: 40px;
+    font-weight: 350;
+    color: rgb(239,0,142,0.8);
+}
+
+.page-header {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    
 }
 
 .page-footer {
     position: fixed;
     left: 50px;
-    bottom: 10%;
-    background: lightblue;
-}
-
-.social-media-links{
-    position: relative;
-    right: 40px;
-    bottom: 20px;
-    height: 40px;
-    width: 25px;
+    bottom: 50px;
+    
 }
 
 .page-content{
-    right: 0;
-    background: pink;
+    margin-left: 220px;
+    padding: 0;
+    text-align: right;
+    
 }
-
-
 
 .content-section{
-    padding: 0;
-    margin-left: 400px;
     min-height: 100vh;
-    width: 1000px;
-    background: plum;
-    text-align: right;
 }
 
-.page-navigation__item{
-    list-style-type: none;
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .band-members{
-    right:0;
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    text-align: left;
+}
+
+.band-members__desc{
+    top: 10px;
 }
 
 .band-members__item{
-    list-style-type: none;
+    align-self: center;
 }
 
-.gallery__item{
-    list-style-type: none;
+.concerts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width:1900px;
 }
 
-.social-media-links__item{
-    list-style-type: none;
+.concerts__image{
+    width: 900px;
+    padding: 4px;
+    height: auto;
 }
 
-.screen-reader-only{
-    display: none;
+.content-section__header{
+    position: relative;
+    left: 200px;
+}
+
+.video__vid{
+    position: relative;
+    left: 200px;
+    padding: 20px;
+}
+
+.gallery{
+    width: 1000px;
+    position: relative;
+    left:500px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.gallery__image{
+    width: 320px;
+    padding: 10px;
+    height: auto;
+    border-top: 3px, solid, hotpink;
+}
+
+.about{
+    position: absolute;
+
+}
+
+.about-section__desc{
+    text-align: left;
+    background-color: #25072C;
+    color:  rgb(204,200,255,0.5);
+    position: relative;
+    width: 380px;
+    height: 380px;
+    padding: 40px;
+    bottom: 280px;
+    left: 160px;
+    border-bottom: 20px, solid, #ef008e;
+}
+
+.concerts__image{
+    width: 350px;
+    height: auto;
+}
+
+.contact-section__image{
+    position: relative;
+    right: 300px;
+    top: 50px;
+}
+
+address{
+    position: relative;
+    left: 1080px;
+    bottom: 130px;
+    text-align: left;
+}
+
+.form__field{
+    text-align: left;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    position: relative;
+    left: 525px;
+    top: 50px;
+}
+
+.form__button{
+    position: relative;
+    padding: 10px;
+    right: 1155px;
 }

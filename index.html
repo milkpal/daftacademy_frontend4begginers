@@ -40,22 +40,22 @@
                 <ul class="band-members">
                     <li class="band-members__item">
                         <img alt="Stylised keyboard player's face" src="band-member01.png">
-                        <p class="band-members__name">Kamil Zgondek</p>
+                        <h3 class="band-members__name">Kamil Zgondek</h3>
                         <p class="band-members__desc">Keyboard</p>
                     </li>
                     <li class="band-members__item">
                         <img alt="Stylised vocalist's face" src="band-member02.png">
-                        <p class="band-members__name">Łukasz Furman</p>
+                        <h3 class="band-members__name">Łukasz Furman</h3>
                         <p class="band-members__desc">Vocals</p>
                     </li>
                     <li class="band-members__item">
                         <img alt="Stylised drummer's face" src="band-member03.png">
-                        <p class="band-members__name">Kamil Majewski</p>
+                        <h3 class="band-members__name">Kamil Majewski</h3>
                         <p class="band-members__desc">Drums</p>
                     </li>
                     <li class="band-members__item">
                         <img alt="Stylised bass guitarist's face" src="band-member04.png">
-                        <p class="band-members__name">Daniel Cajzer</p>
+                        <h3 class="band-members__name">Daniel Cajzer</h3>
                         <p class="band-members__desc">Bass Guitar</p>
                     </li>
                 </ul>
@@ -117,7 +117,7 @@
             </section>
             <section id="video" class="content-section">
                 <h2 class="content-section__header">Video</h2>
-                <iframe width="853" height="480" 
+                <iframe class="video__vid" width="853" height="480" 
                 src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
@@ -157,8 +157,8 @@
             </section>
             <section id="contact" class="content-section">
                 <h2 class="content-section__header">Contact</h2>
-                <img alt="Image of band members" src="band12.jpg">
-                <address>
+                <img class="contact-section__image" alt="Image of band members" src="band12.jpg">
+                <address class="contact-section__address">
                     Tel: 00 48 999 00 00<br/>
                     e-mail: 6bmband@mail.mail 
                 </address>
@@ -171,7 +171,7 @@
                         <label class="form__label" for="topic">Topic</label>
                         <input class="form__input" type="text" name="topic" id="topic" required />
                     </div>
-                    <div class="form__field">
+                    <div class="form__button">
                         <button class="button" type="submit">Contact us!</button>
                     </div>
                 </form>
